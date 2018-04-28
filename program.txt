@@ -1,3 +1,6 @@
 Main(){
 print "Hello word"
 }
+metho(){
+print "zXZX"
+}
