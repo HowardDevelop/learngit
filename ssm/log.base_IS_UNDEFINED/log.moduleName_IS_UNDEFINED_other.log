@@ -1,0 +1,844 @@
+2018-04-25 11:11:19.604 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 11:11:20.314 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 11:11:20.442 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 11:11:20.460 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 11:11:20.469 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 11:11:20.551 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 11:11:20.557 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23aa363a] was not registered for synchronization because synchronization is not active
+2018-04-25 11:11:20.620 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f] will not be managed by Spring
+2018-04-25 11:11:20.622 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f]
+2018-04-25 11:11:20.639 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 11:11:20.752 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Rex(String)
+2018-04-25 11:11:20.777 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23aa363a]
+2018-04-25 11:11:20.778 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 11:11:20.778 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c398c80] was not registered for synchronization because synchronization is not active
+2018-04-25 11:11:20.781 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f] will not be managed by Spring
+2018-04-25 11:11:20.781 DEBUG [main] org.ssm.dufy.dao.UserEquimentDao.findUserEquiment.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f]
+2018-04-25 11:11:20.781 DEBUG [main] org.ssm.dufy.dao.UserEquimentDao.findUserEquiment.debug():132 -==>  Preparing: SELECT * from EQ_USER where USERID = ? 
+2018-04-25 11:11:20.783 DEBUG [main] org.ssm.dufy.dao.UserEquimentDao.findUserEquiment.debug():132 -==> Parameters: 17(String)
+2018-04-25 11:11:20.786 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c398c80]
+2018-04-25 11:11:20.786 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 11:11:20.787 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8] was not registered for synchronization because synchronization is not active
+2018-04-25 11:11:20.787 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f] will not be managed by Spring
+2018-04-25 11:11:20.788 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f]
+2018-04-25 11:11:20.788 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' and ID = ? 
+2018-04-25 11:11:20.789 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==> Parameters: 1(String)
+2018-04-25 11:11:20.793 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8]
+2018-04-25 11:11:20.793 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 11:11:20.793 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a5bd950] was not registered for synchronization because synchronization is not active
+2018-04-25 11:11:20.794 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f] will not be managed by Spring
+2018-04-25 11:11:20.794 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f]
+2018-04-25 11:11:20.794 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' and ID = ? 
+2018-04-25 11:11:20.795 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==> Parameters: 2(String)
+2018-04-25 11:11:20.797 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a5bd950]
+2018-04-25 11:11:20.798 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 11:11:20.798 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2313052e] was not registered for synchronization because synchronization is not active
+2018-04-25 11:11:20.799 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f] will not be managed by Spring
+2018-04-25 11:11:20.799 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2320fa6f]
+2018-04-25 11:11:20.799 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' and ID = ? 
+2018-04-25 11:11:20.800 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==> Parameters: 4(String)
+2018-04-25 11:11:20.802 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2313052e]
+2018-04-25 13:18:40.027 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:18:41.625 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:18:41.984 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:18:42.013 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:18:42.023 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:18:42.124 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 13:18:42.151 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb] was not registered for synchronization because synchronization is not active
+2018-04-25 13:18:42.232 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9] will not be managed by Spring
+2018-04-25 13:18:42.233 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9]
+2018-04-25 13:18:42.241 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 13:18:42.518 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Rex1(String)
+2018-04-25 13:18:42.570 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb]
+2018-04-25 13:38:47.771 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:38:48.490 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:38:48.599 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:38:48.617 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:38:48.625 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:38:48.679 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 13:38:48.684 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb] was not registered for synchronization because synchronization is not active
+2018-04-25 13:38:48.745 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9] will not be managed by Spring
+2018-04-25 13:38:48.747 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9]
+2018-04-25 13:38:48.752 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 13:38:48.928 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Rex1(String)
+2018-04-25 13:38:48.960 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb]
+2018-04-25 13:38:59.935 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:39:00.726 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:39:00.847 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:39:00.868 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:39:00.878 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:39:00.934 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 13:39:00.940 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb] was not registered for synchronization because synchronization is not active
+2018-04-25 13:39:01.006 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9] will not be managed by Spring
+2018-04-25 13:39:01.008 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9]
+2018-04-25 13:39:01.014 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 13:39:01.136 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Rex(String)
+2018-04-25 13:39:01.184 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb]
+2018-04-25 13:40:18.480 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:40:19.547 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:40:19.730 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:40:19.752 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:40:19.760 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:40:19.814 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 13:40:19.818 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb] was not registered for synchronization because synchronization is not active
+2018-04-25 13:40:19.878 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9] will not be managed by Spring
+2018-04-25 13:40:19.880 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4d722ac9]
+2018-04-25 13:40:19.885 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 13:40:19.986 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Rex(String)
+2018-04-25 13:40:20.012 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55dfebeb]
+2018-04-25 13:40:23.865 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:40:24.505 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:40:24.618 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:40:24.633 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:40:24.642 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:48:19.217 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:48:19.854 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:48:19.962 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:48:19.977 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:48:19.984 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:52:19.307 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:52:20.160 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:52:20.287 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:52:20.309 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:52:20.317 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 13:59:52.739 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 13:59:53.377 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 13:59:53.488 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 13:59:53.501 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 13:59:53.509 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:07:36.658 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:07:37.366 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:07:37.478 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:07:37.494 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:07:37.504 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:08:03.119 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:08:03.960 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:08:04.096 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:08:04.117 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:08:04.128 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:08:20.757 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:08:21.446 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:08:21.591 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:08:21.610 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:08:21.619 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:08:27.531 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:08:28.161 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:08:28.260 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:08:28.281 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:08:28.289 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:08:28.340 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:08:28.344 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:08:28.394 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:08:28.396 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:08:28.400 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:08:28.497 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:08:28.522 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:08:28.523 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:08:28.523 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:08:28.524 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:08:28.524 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:08:28.524 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' 
+2018-04-25 14:08:28.525 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: 
+2018-04-25 14:08:28.528 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:08:28.633 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:08:28.634 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ab1c47] was not registered for synchronization because synchronization is not active
+2018-04-25 14:08:28.637 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:08:28.638 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:08:28.639 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -==>  Preparing: INSERT INTO USER ( NAME, PASSWORD, PHONE ) VALUES ( ?, ?, ? ) 
+2018-04-25 14:08:28.647 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -==> Parameters: Howard(String), kqnPPF8D9hA=(String), (String)
+2018-04-25 14:08:28.816 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ab1c47]
+2018-04-25 14:10:23.339 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:10:23.971 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:10:24.080 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:10:24.095 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:10:24.104 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:11:43.998 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:11:44.689 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:11:44.803 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:11:44.821 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:11:44.829 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:11:44.887 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:11:44.892 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:11:44.951 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:11:44.953 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:11:44.957 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:11:45.055 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:11:45.080 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:11:45.093 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:11:45.093 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@183e8023] was not registered for synchronization because synchronization is not active
+2018-04-25 14:11:45.094 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:11:45.095 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:11:45.095 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -==>  Preparing: INSERT INTO USER ( NAME, PASSWORD, PHONE ) VALUES ( ?, ?, ? ) 
+2018-04-25 14:11:45.098 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -==> Parameters: Howard(String), kqnPPF8D9hA=(String), 12344556(String)
+2018-04-25 14:11:45.311 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@183e8023]
+2018-04-25 14:11:45.311 ERROR [main] org.ssm.dufy.service.impl.UserServiceImpl.addUserMsg():138 -添加用户异常
+2018-04-25 14:12:23.973 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:12:24.644 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:12:24.830 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:12:24.855 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:12:24.865 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:12:24.959 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:12:24.966 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:12:25.077 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:12:25.079 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:12:25.087 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:12:25.254 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:12:25.294 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:12:25.295 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:12:25.295 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:12:25.296 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:12:25.296 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:12:25.296 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' 
+2018-04-25 14:12:25.297 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: 
+2018-04-25 14:12:25.300 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:12:25.316 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:12:25.316 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ab1c47] was not registered for synchronization because synchronization is not active
+2018-04-25 14:12:25.317 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:12:25.318 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:12:25.318 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -==>  Preparing: INSERT INTO USER ( NAME, PASSWORD, PHONE ) VALUES ( ?, ?, ? ) 
+2018-04-25 14:12:25.322 DEBUG [main] org.ssm.dufy.dao.UserDao.addEntity.debug():132 -==> Parameters: Howard(String), kqnPPF8D9hA=(String), 12344556(String)
+2018-04-25 14:12:25.436 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67ab1c47]
+2018-04-25 14:12:44.777 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:12:45.481 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:12:45.615 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:12:45.639 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:12:45.649 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:13:11.989 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:13:12.084 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1948ea69] was not registered for synchronization because synchronization is not active
+2018-04-25 14:13:12.905 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@58d63b16] will not be managed by Spring
+2018-04-25 14:13:12.927 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@58d63b16]
+2018-04-25 14:13:13.368 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:13:17.057 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:13:18.662 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1948ea69]
+2018-04-25 14:17:19.512 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:17:20.109 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:17:20.231 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:17:20.252 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:17:20.259 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:17:40.252 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:17:40.341 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbf5634] was not registered for synchronization because synchronization is not active
+2018-04-25 14:17:41.131 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6a0659ac] will not be managed by Spring
+2018-04-25 14:17:41.158 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6a0659ac]
+2018-04-25 14:17:41.583 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:17:45.077 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:17:46.835 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbf5634]
+2018-04-25 14:18:29.210 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:18:29.777 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:18:29.874 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:18:29.887 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:18:29.894 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:18:29.950 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:18:29.954 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:18:30.007 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:18:30.009 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:18:30.015 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:18:30.104 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:18:30.202 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:20:30.545 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:20:31.125 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:20:31.230 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:20:31.246 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:20:31.263 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:20:31.332 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:20:31.341 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:20:31.401 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:20:31.403 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:20:31.409 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:20:31.558 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard1(String)
+2018-04-25 14:20:31.594 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:20:31.595 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:20:31.596 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:20:31.597 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:20:31.597 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:20:31.598 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' 
+2018-04-25 14:20:31.599 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: 
+2018-04-25 14:20:31.609 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:40:24.271 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:40:24.883 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:40:24.977 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:40:24.996 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:40:25.004 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:40:25.060 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:40:25.066 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:40:25.123 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:40:25.124 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:40:25.129 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:40:25.224 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: (String)
+2018-04-25 14:40:25.249 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:42:31.627 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:42:32.372 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:42:32.485 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:42:32.501 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:42:32.509 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:42:32.572 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:42:32.582 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:42:32.642 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:42:32.644 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:42:32.649 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:42:32.773 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: (String)
+2018-04-25 14:42:37.689 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:42:38.276 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:42:38.388 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:42:38.404 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:42:38.414 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:42:38.472 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:42:38.477 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:42:38.532 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:42:38.535 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:42:38.541 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:42:38.650 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:42:38.677 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:42:38.678 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:42:38.678 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:42:38.679 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:42:38.679 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:42:38.680 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:42:38.680 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:42:38.682 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:42:38.683 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:42:38.683 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 14:42:38.683 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:42:38.684 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:42:38.684 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND PHONE = ? 
+2018-04-25 14:42:38.686 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: 12344556(String)
+2018-04-25 14:42:38.689 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 14:42:38.690 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:42:38.690 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8] was not registered for synchronization because synchronization is not active
+2018-04-25 14:42:38.691 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:42:38.691 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:42:38.692 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -==>  Preparing: UPDATE USER SET NAME=? ,PASSWORD = ? ,PHONE =? WHERE ID=? 
+2018-04-25 14:42:38.695 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -==> Parameters: Howard(String), 123(String), 12344556(String), 20(String)
+2018-04-25 14:42:38.816 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8]
+2018-04-25 14:44:58.746 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:44:59.428 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:44:59.537 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:44:59.550 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:44:59.561 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:44:59.618 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:44:59.623 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:44:59.683 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:44:59.684 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:44:59.689 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:44:59.796 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:44:59.821 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:44:59.822 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:44:59.824 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:44:59.824 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:44:59.825 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:44:59.825 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:44:59.826 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:44:59.828 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:44:59.828 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:44:59.829 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 14:44:59.829 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:44:59.830 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:44:59.830 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND PHONE = ? 
+2018-04-25 14:44:59.832 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: 12345(String)
+2018-04-25 14:44:59.835 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 14:47:01.055 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:47:01.640 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:47:01.768 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:47:01.786 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:47:01.794 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:47:01.848 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:47:01.853 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:47:01.923 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:47:01.925 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:47:01.934 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:47:02.060 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:47:02.092 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:47:02.093 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:47:02.096 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:47:02.096 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:47:02.097 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:47:02.097 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:47:02.098 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:47:02.100 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:47:02.100 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:47:02.100 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 14:47:02.101 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:47:02.101 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:47:02.102 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND PHONE = ? 
+2018-04-25 14:47:02.103 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: 12345(String)
+2018-04-25 14:47:02.106 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 14:47:13.300 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:47:13.847 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:47:13.944 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:47:13.964 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:47:13.972 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:48:08.911 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:48:09.621 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:48:09.731 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:48:09.749 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:48:09.757 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:49:32.253 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:49:32.834 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:49:32.959 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:49:32.976 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:49:32.985 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:52:00.125 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:52:00.793 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:52:00.985 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:52:01.001 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:52:01.012 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:52:01.104 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:52:01.115 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:52:01.216 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:52:01.219 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:52:01.227 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:52:01.332 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard1(String)
+2018-04-25 14:52:01.354 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:52:18.351 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:52:18.929 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:52:19.044 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:52:19.058 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:52:19.069 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:52:41.431 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:52:42.076 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:52:42.183 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:52:42.196 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:52:42.205 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:52:42.269 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:52:42.273 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:52:42.326 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:52:42.327 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:52:42.332 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:52:42.433 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:52:42.457 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:52:42.458 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:52:42.458 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:52:42.459 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:52:42.459 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:52:42.461 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -==>  Preparing: UPDATE USER SET ,DELETEFLAG =? WHERE ID=? 
+2018-04-25 14:52:42.512 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 14:52:42.519 ERROR [main] org.ssm.dufy.service.impl.UserServiceImpl.deleteUserMsg():213 -删除用户异常
+2018-04-25 14:54:14.007 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 14:54:14.542 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 14:54:14.641 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 14:54:14.660 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 14:54:14.667 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 14:54:14.718 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:54:14.724 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 14:54:14.770 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:54:14.772 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:54:14.776 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 14:54:14.861 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 14:54:14.886 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 14:54:14.887 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 14:54:14.887 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 14:54:14.888 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 14:54:14.888 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 14:54:14.889 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -==>  Preparing: UPDATE USER SET DELETEFLAG =? WHERE ID=? 
+2018-04-25 14:54:14.891 DEBUG [main] org.ssm.dufy.dao.UserDao.editEntity.debug():132 -==> Parameters: 1(String), 20(String)
+2018-04-25 14:54:14.991 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:05:26.187 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:05:26.736 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:05:26.832 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:05:26.846 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:05:26.855 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:06:14.575 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:06:15.111 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:06:15.213 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:06:15.226 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:06:15.235 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:06:15.294 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:06:15.300 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:06:15.347 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:06:15.348 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:06:15.353 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:06:15.449 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: sadsad(String)
+2018-04-25 15:06:15.474 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:06:36.753 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:06:37.344 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:06:37.452 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:06:37.472 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:06:37.482 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:06:37.557 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:06:37.564 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:06:37.626 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:06:37.627 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:06:37.635 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:06:37.736 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: slplc(String)
+2018-04-25 15:06:37.768 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:11:01.122 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:11:01.798 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:11:02.015 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:11:02.042 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:11:02.069 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:11:02.156 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:11:02.161 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:11:02.220 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:11:02.222 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:11:02.226 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:11:02.325 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: slplc(String)
+2018-04-25 15:11:02.355 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:11:14.232 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:11:14.794 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:11:14.899 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:11:14.920 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:11:14.926 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:11:54.188 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:11:54.754 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:11:54.851 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:11:54.869 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:11:54.876 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:12:05.010 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:12:05.531 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:12:05.641 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:12:05.657 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:12:05.665 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:15:08.028 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:15:08.893 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:15:09.132 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:15:09.152 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:15:09.164 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:15:09.279 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:15:09.288 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:15:09.400 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:15:09.403 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:15:09.411 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:15:09.533 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: slplc(String)
+2018-04-25 15:15:09.558 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:15:58.713 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:15:59.296 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:15:59.405 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:15:59.419 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:15:59.426 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:15:59.492 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:15:59.496 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:15:59.556 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:15:59.558 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:15:59.563 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:15:59.674 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:15:59.701 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:15:59.702 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:15:59.702 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:15:59.703 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:15:59.703 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:15:59.704 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND MODUBUS_ADDRESS = ? 
+2018-04-25 15:15:59.704 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: 192.1.1.123(String)
+2018-04-25 15:15:59.706 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:16:35.590 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:16:36.230 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:16:36.438 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:16:36.466 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:16:36.480 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:16:36.570 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:16:36.576 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:16:36.624 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:16:36.626 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:16:36.632 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:16:36.734 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:16:36.757 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:16:36.758 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:16:36.759 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:16:36.759 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:16:36.760 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:16:36.760 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND MODUBUS_ADDRESS = ? 
+2018-04-25 15:16:36.761 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: 192.1.1.13(String)
+2018-04-25 15:16:36.763 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:16:36.763 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:16:36.764 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca] was not registered for synchronization because synchronization is not active
+2018-04-25 15:16:36.764 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:16:36.765 DEBUG [main] org.ssm.dufy.dao.EquimentDao.addEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:16:36.765 DEBUG [main] org.ssm.dufy.dao.EquimentDao.addEntity.debug():132 -==>  Preparing: INSERT INTO EQUIMENT ( EQUIMENT_NAME, MODUBUS_ADDRESS ) VALUES ( ?, ? ) 
+2018-04-25 15:16:36.768 DEBUG [main] org.ssm.dufy.dao.EquimentDao.addEntity.debug():132 -==> Parameters: plcCS(String), 192.1.1.13(String)
+2018-04-25 15:16:36.837 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2018-04-25 15:27:16.673 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:27:17.428 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:27:17.608 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:27:17.628 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:27:17.639 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:29:32.593 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:29:33.560 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:29:33.735 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:29:33.761 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:29:33.780 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:29:56.823 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:29:57.372 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:29:57.473 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:29:57.486 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:29:57.494 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:30:51.483 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:30:52.077 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:30:52.192 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:30:52.209 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:30:52.225 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:30:52.288 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:30:52.295 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:30:52.356 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:30:52.357 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:30:52.362 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:30:52.469 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS1(String)
+2018-04-25 15:30:52.498 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:31:24.818 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:31:25.412 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:31:25.528 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:31:25.547 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:31:25.556 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:31:46.344 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:31:46.892 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:31:46.996 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:31:47.015 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:31:47.024 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:33:00.432 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:33:01.333 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:33:01.445 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:33:01.459 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:33:01.470 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:33:01.535 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:33:01.540 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:33:01.596 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:33:01.598 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:33:01.603 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:33:01.709 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:33:01.738 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:33:01.739 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:33:01.740 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:33:01.740 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:33:01.741 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:33:01.742 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:33:01.743 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: PLC231(String)
+2018-04-25 15:33:01.744 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:37:28.856 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:37:29.457 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:37:29.567 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:37:29.585 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:37:29.595 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:37:29.665 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:37:29.673 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:37:29.732 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:37:29.734 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:37:29.745 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:37:29.877 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:37:29.901 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:37:29.902 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:37:29.902 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:37:29.903 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:37:29.903 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:37:29.903 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:37:29.904 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: PLC222(String)
+2018-04-25 15:37:29.905 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:37:29.905 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:37:29.905 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 15:37:29.906 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:37:29.906 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:37:29.906 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND MODUBUS_ADDRESS = ? 
+2018-04-25 15:37:29.907 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: 192.168.1.221(String)
+2018-04-25 15:37:29.909 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 15:38:28.045 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:38:28.639 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:38:28.752 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:38:28.773 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:38:28.783 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:38:28.850 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:38:28.855 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:38:28.915 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:38:28.917 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:38:28.924 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:38:29.033 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: PLC222(String)
+2018-04-25 15:38:29.058 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:38:58.338 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:38:58.938 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:38:59.056 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:38:59.077 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:38:59.086 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:38:59.139 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:38:59.144 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:38:59.201 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:38:59.203 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:38:59.209 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:38:59.315 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:38:59.340 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:38:59.341 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:38:59.341 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:38:59.341 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:38:59.342 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:38:59.342 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:38:59.342 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:38:59.344 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:38:59.344 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:38:59.344 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 15:38:59.345 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:38:59.345 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:38:59.345 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND MODUBUS_ADDRESS = ? 
+2018-04-25 15:38:59.346 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: 192.168.1.222(String)
+2018-04-25 15:38:59.347 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 15:38:59.348 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:38:59.348 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8] was not registered for synchronization because synchronization is not active
+2018-04-25 15:38:59.349 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:38:59.350 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:38:59.350 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==>  Preparing: UPDATE EQUIMENT SET EQUIMENT_NAME=? ,MODUBUS_ADDRESS = ? WHERE ID=? 
+2018-04-25 15:38:59.353 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==> Parameters: plcCS(String), 192.168.1.222(String), 9(String)
+2018-04-25 15:38:59.533 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8]
+2018-04-25 15:39:46.011 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:39:46.554 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:39:46.717 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:39:46.750 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:39:46.785 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:39:46.855 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:46.860 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:46.912 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:46.914 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:46.921 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:39:47.032 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:39:47.059 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:39:47.060 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:47.060 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:47.061 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:47.061 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:47.062 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:39:47.062 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:39:47.064 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:39:47.065 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:47.065 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:47.065 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:47.066 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:47.066 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND MODUBUS_ADDRESS = ? 
+2018-04-25 15:39:47.067 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: 192.168.1.222(String)
+2018-04-25 15:39:47.069 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 15:39:47.070 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:47.070 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:47.071 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:47.071 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:47.072 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==>  Preparing: UPDATE EQUIMENT SET EQUIMENT_NAME=? ,MODUBUS_ADDRESS = ? WHERE ID=? 
+2018-04-25 15:39:47.075 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==> Parameters: plcCS(String), 192.168.1.222(String), 9(String)
+2018-04-25 15:39:47.077 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8]
+2018-04-25 15:39:54.626 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:39:55.223 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:39:55.335 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:39:55.349 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:39:55.359 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:39:55.429 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:55.434 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:55.495 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:55.497 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:55.503 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:39:55.628 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS(String)
+2018-04-25 15:39:55.652 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:39:55.653 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:55.653 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:55.654 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:55.654 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:55.654 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:39:55.655 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS1(String)
+2018-04-25 15:39:55.656 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:39:55.657 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:55.657 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:55.657 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:55.658 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:55.658 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND MODUBUS_ADDRESS = ? 
+2018-04-25 15:39:55.659 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: 192.168.1.222(String)
+2018-04-25 15:39:55.661 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29df4d43]
+2018-04-25 15:39:55.661 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:39:55.661 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8] was not registered for synchronization because synchronization is not active
+2018-04-25 15:39:55.662 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:39:55.663 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:39:55.663 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==>  Preparing: UPDATE EQUIMENT SET EQUIMENT_NAME=? ,MODUBUS_ADDRESS = ? WHERE ID=? 
+2018-04-25 15:39:55.665 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==> Parameters: plcCS1(String), 192.168.1.222(String), 9(String)
+2018-04-25 15:39:55.740 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60641ec8]
+2018-04-25 15:45:50.121 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:45:50.706 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:45:50.817 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:45:50.833 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:45:50.841 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:46:41.561 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:46:42.374 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:46:42.498 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:46:42.512 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:46:42.520 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:46:42.585 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:46:42.591 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:46:42.653 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:46:42.656 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:46:42.663 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:46:42.774 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: pllls(String)
+2018-04-25 15:46:42.800 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:47:17.891 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:47:18.474 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:47:18.588 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:47:18.606 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:47:18.615 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:47:18.682 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:47:18.687 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:47:18.743 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:47:18.745 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:47:18.750 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' AND EQUIMENT_NAME = ? 
+2018-04-25 15:47:18.855 DEBUG [main] org.ssm.dufy.dao.EquimentDao.findEquimentInfo.debug():132 -==> Parameters: plcCS1(String)
+2018-04-25 15:47:18.883 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:47:18.885 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:47:18.886 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:47:18.887 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:47:18.888 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:47:18.889 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==>  Preparing: UPDATE EQUIMENT SET DELETEFLAG =? WHERE ID=? 
+2018-04-25 15:47:18.892 DEBUG [main] org.ssm.dufy.dao.EquimentDao.editEntity.debug():132 -==> Parameters: 1(String), 9(String)
+2018-04-25 15:47:19.030 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:55:11.000 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:55:11.616 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:55:11.747 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:55:11.771 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:55:11.782 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:55:41.538 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:55:42.139 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:55:42.253 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:55:42.273 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:55:42.282 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:55:42.338 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:55:42.343 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:55:42.402 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:55:42.404 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:55:42.409 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 15:55:42.519 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard1(String)
+2018-04-25 15:55:42.541 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:56:18.512 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:56:19.108 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:56:19.238 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:56:19.254 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:56:19.263 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:56:19.326 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:56:19.332 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:56:19.393 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:56:19.395 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:56:19.401 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 15:56:19.505 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Howard(String)
+2018-04-25 15:56:19.532 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:56:45.910 DEBUG [main] org.apache.ibatis.logging.LogFactory.setImplementation():115 -Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-04-25 15:56:46.512 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():358 -Property 'configLocation' not specified, using default MyBatis Configuration
+2018-04-25 15:56:46.622 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\Equiment-mapper.xml]'
+2018-04-25 15:56:46.637 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\User-mapper.xml]'
+2018-04-25 15:56:46.645 DEBUG [main] org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory():468 -Parsed mapper file: 'file [D:\learn-tech-collection-master\ssm\target\classes\org\ssm\dufy\mapper\UserEquiment-mapper.xml]'
+2018-04-25 15:56:46.701 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:56:46.706 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d] was not registered for synchronization because synchronization is not active
+2018-04-25 15:56:46.756 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:56:46.758 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:56:46.762 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==>  Preparing: select id, name, password, phone, deleteFlag from user where DELETEFLAG = '0' AND NAME = ? 
+2018-04-25 15:56:46.859 DEBUG [main] org.ssm.dufy.dao.UserDao.findUserInfo.debug():132 -==> Parameters: Rex(String)
+2018-04-25 15:56:46.883 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e35bc3d]
+2018-04-25 15:56:46.884 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:56:46.885 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09] was not registered for synchronization because synchronization is not active
+2018-04-25 15:56:46.909 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:56:46.910 DEBUG [main] org.ssm.dufy.dao.UserEquimentDao.findUserEquiment.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:56:46.910 DEBUG [main] org.ssm.dufy.dao.UserEquimentDao.findUserEquiment.debug():132 -==>  Preparing: SELECT * from EQ_USER where USERID = ? 
+2018-04-25 15:56:46.913 DEBUG [main] org.ssm.dufy.dao.UserEquimentDao.findUserEquiment.debug():132 -==> Parameters: 17(String)
+2018-04-25 15:56:46.916 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@607fbe09]
+2018-04-25 15:56:46.917 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:56:46.918 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a891c97] was not registered for synchronization because synchronization is not active
+2018-04-25 15:56:46.919 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:56:46.920 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:56:46.920 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' and ID = ? 
+2018-04-25 15:56:46.923 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==> Parameters: 1(String)
+2018-04-25 15:56:46.925 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a891c97]
+2018-04-25 15:56:46.926 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:56:46.926 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7756c3cd] was not registered for synchronization because synchronization is not active
+2018-04-25 15:56:46.927 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:56:46.928 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:56:46.928 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' and ID = ? 
+2018-04-25 15:56:46.929 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==> Parameters: 2(String)
+2018-04-25 15:56:46.932 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7756c3cd]
+2018-04-25 15:56:46.933 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():106 -Creating a new SqlSession
+2018-04-25 15:56:46.933 DEBUG [main] org.mybatis.spring.SqlSessionUtils.getSqlSession():142 -SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57fd91c9] was not registered for synchronization because synchronization is not active
+2018-04-25 15:56:46.934 DEBUG [main] org.mybatis.spring.transaction.SpringManagedTransaction.openConnection():85 -JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb] will not be managed by Spring
+2018-04-25 15:56:46.934 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@53f0a4cb]
+2018-04-25 15:56:46.934 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==>  Preparing: select ID, EQUIMENT_NAME, MODUBUS_ADDRESS, DELETEFLAG from EQUIMENT where DELETEFLAG = '0' and ID = ? 
+2018-04-25 15:56:46.935 DEBUG [main] org.ssm.dufy.dao.EquimentDao.selectByPrimaryKey.debug():132 -==> Parameters: 4(String)
+2018-04-25 15:56:46.938 DEBUG [main] org.mybatis.spring.SqlSessionUtils.closeSqlSession():170 -Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57fd91c9]
